@@ -2,129 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Yeezo" />
     <meta
       name="description"
-      content="The official website for the Changzhou Fornet"
+      content="The official website for Changzhou Fornet"
     />
     <title>Changzhou Fornet</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <h1>Welcome to Changzhou Fornet</h1>
-      <nav>
-        <ul>
+    <header class="header">
+      <h1 class="header__h1">Changzhou Fornet</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
           <li>
-            <a href="#about"
-              >About <abbr title="Changzhou Fornet">Fornet</abbr></a
-            >
+            <a href="#menu">Menu</a>
           </li>
           <li>
-            <a href="#menu">Our Menu</a>
+            <a href="hours.html">Hours</a>
           </li>
           <li>
-            <a href="hours.html">Opening Hours</a>
+            <a href="contact.html">Contact</a>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About</a>
           </li>
         </ul>
       </nav>
+    </header>
 
+    <section class="hero">
+      <h2 class="hero__h2">Welcome!</h2>
       <figure>
         <img
           src="img/Fornet_300x225.jpeg"
           alt="Fornet"
           title="For Cleaning!"
-          width="300"
-          height="225"
+          width="1000"
+          height="700"
         />
-        <figcaption>Chanzhou Fornet</figcaption>
+        <figcaption class="offscreen">Chanzhou Fornet</figcaption>
       </figure>
-    </header>
-    <hr />
-    <main>
-      <article id="about">
-        <h2>About <abbr title="Changzhou Fornet">Changzhou Fornet</abbr></h2>
-        <p>
-          <abbr title="Changzhou Fornet">Changzhou Fornet</abbr> was founded in
-          <time datetime="1997">1997</time>. A laundry for quality, a laundry
-          for customers to rest assured, a laundry for
-          <strong>customers to love</strong>. 🫶 🫶 🫶
-        </p>
-        <aside>
-          <h3>Fornet Trivia</h3>
-          <details>
-            <summary>Why we need dry cleaning shops?</summary>
-            <p>
-              Dry cleaning shops offer specialized cleaning for delicate fabrics
-              and provide stain removal, alterations, and repairs, making them
-              essential for maintaining the quality and longevity of our
-              clothes.
-            </p>
-          </details>
-        </aside>
-      </article>
-      <hr />
-      <article id="menu">
-        <h2>Our Menu</h2>
-        <table>
-          <caption>
+    </section>
+
+    <main class="main">
+      <article id="menu" class="main__article menu">
+        <h2 class="menu__h2">Our Menu</h2>
+        <table class="menu__container">
+          <caption class="offscreen">
             Our Washes
           </caption>
           <thead>
             <tr>
-              <th>Clothes</th>
-              <th scope="col"><abbr title="Quantity">Qty</abbr></th>
-              <th scope="col">price</th>
+              <th class="menu__header" scope="col">Clothes</th>
+              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">price</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row" rowspan="3">Washing</th>
-              <td>1</td>
-              <td>£10.50</td>
+              <th class="menu__item menu__wa" scope="row" rowspan="3">
+                Washing
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">£10.50</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>£20.50</td>
+              <td class="menu__item">2</td>
+              <td class="menu__item">£20.50</td>
             </tr>
             <tr>
-              <td>3</td>
-              <td>£30.25</td>
+              <td class="menu__item">3</td>
+              <td class="menu__item">£30.25</td>
             </tr>
             <tr>
-              <th scope="row" rowspan="3">Dry cleaning</th>
-              <td>1</td>
-              <td>£20</td>
+              <th class="menu__item menu__dr" scope="row" rowspan="3">
+                Dry cleaning
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">£20</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>£35.50</td>
+              <td class="menu__item">2</td>
+              <td class="menu__item">£35.50</td>
             </tr>
             <tr>
-              <td>3</td>
-              <td>£45.50</td>
+              <td class="menu__item">3</td>
+              <td class="menu__item">£45.50</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="3">Clothing Renovation £50</td>
+              <td class="menu__item menu__cs" colspan="3">
+                Clothing Renovation £50
+              </td>
             </tr>
           </tfoot>
         </table>
-        <br />
-        <p>
+
+        <p class="center">
           <a href="#">Back To Top</a>
         </p>
       </article>
     </main>
-    <hr />
-    <footer>
-      <p>Copyright &copy; Changzhou Fornet</p>
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Changzhou Fornet</span>
+      </p>
     </footer>
   </body>
 </html>
