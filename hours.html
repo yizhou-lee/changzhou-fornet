@@ -2,62 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Yeezo" />
     <meta name="description" content="Store Hours for the Changzhou Fornet" />
     <title>Changzhou Fornet Hours</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <h1>Changzhou Fornet Hours</h1>
-      <nav>
-        <ul>
+    <header class="header">
+      <h1 class="header__h1">Changzhou Fornet</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
           <li>
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/#about"
-              >About <abbr title="Changzhou Fornet">Fornet</abbr></a
-            >
+            <a href="/#menu">Menu</a>
           </li>
           <li>
-            <a href="/#menu">Our Menu</a>
+            <a href="contact.html">Contact</a>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About</a>
           </li>
         </ul>
       </nav>
+    </header>
 
-      <figure>
+    <section>
+      <figure class="hero">
         <img
           src="img/Fornet-shop-300x210.png"
           alt="Changzhou Fornet Shop"
           title="For Cleaning!"
-          width="300"
-          height="210"
+          width="1000"
+          height="700"
         />
-        <figcaption>Chanzhou Fornet Shop</figcaption>
+        <figcaption class="offscreen">Chanzhou Fornet Shop</figcaption>
       </figure>
-    </header>
-    <hr />
-    <main>
-      <p>We are open 7 days a week!</p>
-      <dl>
-        <dt>Monday - Friday</dt>
-        <dd>9am - 7pm</dd>
-        <dt>Saturday - Sunday</dt>
-        <dd>9am - 5pm</dd>
-      </dl>
-      <p>
-        <a href="#">Back To Top</a>
-      </p>
+    </section>
+
+    <main class="main">
+      <article class="main__article">
+        <h2>Hours</h2>
+        <p>We are open 7 days a week!</p>
+        <dl>
+          <dt>Monday - Friday</dt>
+          <dd>9am - 7pm</dd>
+          <dt>Saturday - Sunday</dt>
+          <dd>9am - 5pm</dd>
+        </dl>
+      </article>
     </main>
-    <hr />
-    <footer>
-      <p>Copyright &copy; Changzhou Fornet</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Changzhou Fornet</span>
+      </p>
     </footer>
   </body>
 </html>
